@@ -33,13 +33,10 @@
     NSLog(@"-[KISContact dealloc]: %@", _name);
     
     [_name release];
-    _name = nil;
     
     [_emailAddress release];
-    _emailAddress = nil;
     
     [_phoneNumber release];
-    _phoneNumber = nil;
     
     [super dealloc];
 }

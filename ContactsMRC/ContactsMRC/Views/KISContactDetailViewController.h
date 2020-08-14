@@ -7,10 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KISContactController.h"
+#import "KISContact.h"
+#import "KISContactsTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KISContactDetailViewController : UIViewController
+
+@property (nonatomic) KISContactController *kisContactController;
+@property (nonatomic) KISContact *contact;
+
+@property (retain, nonatomic) IBOutlet UITextField *nameTextField;
+@property (retain, nonatomic) IBOutlet UITextField *phoneNumberTextField;
+@property (retain, nonatomic) IBOutlet UITextField *emailAddressTextField;
+
+
+
 
 @end
 

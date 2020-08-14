@@ -7,10 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KISContact.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KISContactController : NSObject
+
+@property (nonatomic, readonly, copy) NSArray<KISContact *> *contacts;
+
+- (void)addContact:(KISContact *)contact;
+- (void)updateContact:(KISContact *)contact
+                 name:(NSString *)name
+         emailAddress:(NSString *)emailAddress
+          phoneNumber:(NSString *)phoneNumber;
 
 @end
 
