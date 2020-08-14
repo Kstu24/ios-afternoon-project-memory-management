@@ -13,6 +13,10 @@
 		11186ED224E39451003404A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11186ED124E39451003404A5 /* Assets.xcassets */; };
 		11186ED524E39451003404A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11186ED324E39451003404A5 /* LaunchScreen.storyboard */; };
 		11186ED824E39451003404A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11186ED724E39451003404A5 /* main.m */; };
+		11C1374124E6269300C87A53 /* KISContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C1374024E6269300C87A53 /* KISContact.m */; };
+		11C1374724E626BA00C87A53 /* KISContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C1374624E626BA00C87A53 /* KISContactsTableViewController.m */; };
+		11C1374A24E626CB00C87A53 /* KISContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C1374924E626CB00C87A53 /* KISContactDetailViewController.m */; };
+		11C1374D24E626DD00C87A53 /* KISContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C1374C24E626DD00C87A53 /* KISContactController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		11186ED424E39451003404A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11186ED624E39451003404A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11186ED724E39451003404A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11C1373F24E6269300C87A53 /* KISContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KISContact.h; sourceTree = "<group>"; };
+		11C1374024E6269300C87A53 /* KISContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KISContact.m; sourceTree = "<group>"; };
+		11C1374524E626BA00C87A53 /* KISContactsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KISContactsTableViewController.h; sourceTree = "<group>"; };
+		11C1374624E626BA00C87A53 /* KISContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KISContactsTableViewController.m; sourceTree = "<group>"; };
+		11C1374824E626CB00C87A53 /* KISContactDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KISContactDetailViewController.h; sourceTree = "<group>"; };
+		11C1374924E626CB00C87A53 /* KISContactDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KISContactDetailViewController.m; sourceTree = "<group>"; };
+		11C1374B24E626DD00C87A53 /* KISContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KISContactController.h; sourceTree = "<group>"; };
+		11C1374C24E626DD00C87A53 /* KISContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KISContactController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,9 @@
 		11186EC424E3943C003404A5 /* ContactsMRC */ = {
 			isa = PBXGroup;
 			children = (
+				11C1374424E626A400C87A53 /* Views */,
+				11C1374324E6269F00C87A53 /* Controller */,
+				11C1374224E6269700C87A53 /* Model */,
 				11186EC524E3943C003404A5 /* AppDelegate.h */,
 				11186EC624E3943C003404A5 /* AppDelegate.m */,
 				11186EC824E3943C003404A5 /* SceneDelegate.h */,
@@ -69,6 +84,35 @@
 				11186ED724E39451003404A5 /* main.m */,
 			);
 			path = ContactsMRC;
+			sourceTree = "<group>";
+		};
+		11C1374224E6269700C87A53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11C1373F24E6269300C87A53 /* KISContact.h */,
+				11C1374024E6269300C87A53 /* KISContact.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11C1374324E6269F00C87A53 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11C1374B24E626DD00C87A53 /* KISContactController.h */,
+				11C1374C24E626DD00C87A53 /* KISContactController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11C1374424E626A400C87A53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11C1374524E626BA00C87A53 /* KISContactsTableViewController.h */,
+				11C1374624E626BA00C87A53 /* KISContactsTableViewController.m */,
+				11C1374824E626CB00C87A53 /* KISContactDetailViewController.h */,
+				11C1374924E626CB00C87A53 /* KISContactDetailViewController.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11186EC724E3943C003404A5 /* AppDelegate.m in Sources */,
+				11C1374D24E626DD00C87A53 /* KISContactController.m in Sources */,
 				11186ED824E39451003404A5 /* main.m in Sources */,
+				11C1374124E6269300C87A53 /* KISContact.m in Sources */,
 				11186ECA24E3943C003404A5 /* SceneDelegate.m in Sources */,
+				11C1374A24E626CB00C87A53 /* KISContactDetailViewController.m in Sources */,
+				11C1374724E626BA00C87A53 /* KISContactsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
